@@ -1,0 +1,110 @@
+.incomeChart__container,
+.expenseChart__container,
+.savingsChart__container,
+.investmentChart__container,
+.loanChart__container,
+.networthChart__container,
+.EmergencyFundChart__container,
+.termInsuranceChart__container,
+.profileChart{
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 10px;
+}
+.incomeChart__container{
+    background-color: #e07a5f;
+}
+.expenseChart__container{
+    background-color: #3d405b;
+}
+.savingsChart__container{
+    background-color: #81b29a;
+}
+.investmentChart__container{
+    background-color: #3d5a80;
+}
+.loanChart__container{
+    background-color: #1f7a8c;
+}
+.networthChart__container{
+    background-color: #bc4749;
+}
+.EmergencyFundChart__container{
+    background-color: #dda15e;
+}
+.termInsuranceChart__container{
+    background-color: #bc6c25;
+}
+.profileChart{
+    /* background-color: #fff; */
+    background-color: #f07167;
+}
+
+
+
+
+
+
+.chart_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .3rem;
+}
+
+.chart_icon{
+    width: 50px;
+    height: 45px;
+    background-color: rgba(191, 190, 190, 0.3);
+    font-size: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.chart_icon:hover{
+    color: #000;
+}
+
+.chart_year{
+    background: #fff;
+    color: #000;
+    border: none;
+    outline: none;
+    padding: .4rem .8rem;
+    border-radius: 4px;
+}
+
+.chart_main{
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart__title{
+    font-size: 23px;
+    color: #fff;
+    margin: .6rem 0 .3rem 0;
+}
+
+.chart__title_profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    /* margin: 3.2rem 0; */
+    color: #fff;
+}
+
+.chart_main .chart_amout{
+    font-size: 25px;
+    color: #fff;
+}
+
+.chart_main .chart_chart{
+    width: 40%;
+}
+
