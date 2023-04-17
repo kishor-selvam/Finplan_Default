@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Navdata = () => {
     const history = useNavigate();
     //state data
+    
     const [isScreen, setIsScreen] = useState(false);
     const [isKishor, setIsKishor] = useState(false);
     const [isDashboard, setIsDashboard] = useState(false);
@@ -146,12 +147,19 @@ const Navdata = () => {
 
     const menuItems = [
         {
-            label: "Screen",
+            // label: "Screen",
             isHeader: true,
         },
         {
+            id: "myProfile",
+            label: "My Profile",
+            icon: "ri-account-circle-line",
+            link: "/dashboardprofile",
+            stateVariables: isScreen,
+        },
+        {
             id: "screen",
-            label: "Screen",
+            label: "Fin Dashboard",
             icon: "ri-computer-line",
             link: "/dashboard",
             stateVariables: isScreen,
@@ -198,9 +206,43 @@ const Navdata = () => {
                 label: "Net Worth",
                 link: "/screen/networth",
                 parentId: "screen",
-                }
+                },
             ]
         },
+        {
+            id: "investmentDashboard",
+            label: "Investment Dashboard",
+            icon: "ri-rocket-line",
+            link: "/investDashboard",
+            stateVariables: isLanding,
+            click: function (e) {
+                e.preventDefault();
+                setIsLanding(!isLanding);
+                setIscurrentState('Landing');
+                updateIconSidebar(e);
+                history('/investDashboard')
+            },
+            subItems: [
+                {
+                    id: "goals",
+                    label: "Goals",
+                    link: "/investGoals",
+                    parentId: "investmentDashboard",
+                },
+                {
+                    id: "investmentAllocation",
+                    label: "Investment Allocation",
+                    link: "/investAllocation",
+                    parentId: "investmentDashboard",
+                },
+                {
+                    id: "investmentPlan",
+                    label: "Investment Plan",
+                    link: "/investPlan",
+                    parentId: "investmentDashboard",
+                },
+            ],
+        }
         // {
         //     label: "Menu",
         //     isHeader: true,

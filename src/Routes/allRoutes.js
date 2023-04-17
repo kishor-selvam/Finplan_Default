@@ -7,6 +7,18 @@ import { Navigate } from "react-router-dom";
 import Computer from "../pages/Kishor";
 import Mobile from "../pages/Kishor/example";
 
+//Dashboard Profile
+import DashboardProfile from "../pages/Screen/profile";
+import RiskProfile from "../pages/Screen/profile/pages/RiskProfile";
+
+// Investment Dashboard
+import InvestmentDashboard from '../pages/Screen/investment_dashboard';
+import InvestmentGoals from '../pages/Screen/investment_dashboard/pages/goals'
+import InvestmentAllocation from '../pages/Screen/investment_dashboard/pages/investment_allocation'
+import InvestmentPlan from '../pages/Screen/investment_dashboard/pages/investment_plan'
+
+
+
 // Dashboard For Screen
 import ScreenDashboard from "../pages/Screen/ScreenDashboard";
 import Expenses from "../pages/Screen/Expenses";
@@ -14,7 +26,8 @@ import AssetChart from "../pages/Screen/Assets";
 import Income from "../pages/Screen/Income";
 import NetWorth from "../pages/Screen/NetWorth";
 import Savings from "../pages/Screen/Savings";
-import Charts from "../pages/Screen/Liabilities"
+import Charts from "../pages/Screen/Liabilities";
+
 
 import DashboardAnalytics from "../pages/DashboardAnalytics";
 import DashboardCrm from "../pages/DashboardCrm";
@@ -254,6 +267,13 @@ import FileManager from "../pages/FileManager";
 import ToDoList from "../pages/ToDo";
 
 const authProtectedRoutes = [
+  { path: "/investDashboard", component: <InvestmentDashboard /> },
+  { path: "/investGoals", component: <InvestmentGoals /> },
+  { path: "/investAllocation", component: <InvestmentAllocation /> },
+  { path: "/investPlan", component: <InvestmentPlan /> },
+  
+  { path: "/dashboardprofile", component: <DashboardProfile /> },
+  { path: "/profile/riskProfile", component: <RiskProfile /> },
   { path: "/screen/dashboard", component: <ScreenDashboard /> },
   { path: "/screen/assets", component: <AssetChart /> },
   { path: "/screen/expenses", component: <Expenses /> },

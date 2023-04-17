@@ -1,0 +1,113 @@
+.added_income_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.added_income_btn{
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    padding: .6rem .8rem;
+    border-radius: 30px;
+}
+
+.added_income{
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 2rem;
+}
+
+.added_income .added_income_table{
+    width: 800px;
+    overflow-x: auto;
+}
+
+.added_income_table th{
+    padding: .8rem;
+}
+.added_income_table td{
+    padding: .8rem;
+    /* color: #000; */
+}
+
+/* .added_income_table tr:nth-child(even){
+    background: rgb(240, 240, 240);
+} */
+
+.addedIncome_edit__btn{
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: blue;
+    margin-right: 1rem;
+    background: none;
+}
+.addedIncome_delete__btn{
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: red;
+    background: none;
+}
+
+.addedIncome_close__btn{
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: red;
+    background: none;
+}
+
+.added_income_table thead{
+    background: #3d405b;
+    color: #fff;
+}
+
+.added_income_table td select{
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: .6rem;
+    outline: none;
+    border-radius: 10px;
+}
+
+.added_income_table td input{
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: .6rem;
+    outline: none;
+    border-radius: 10px;
+}
+
+.addedIncome_add__btn{
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    color: green;
+    margin-right: .8rem;
+    background: none;
+}
+
+.addedIncome_add__btnIcon{
+    margin-right: .5rem;
+}
+
+
+.income_chartanalysis{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+@media(min-width:1024px) {
+    .added_income .added_income_table {
+        width: 100%;
+    }
+}

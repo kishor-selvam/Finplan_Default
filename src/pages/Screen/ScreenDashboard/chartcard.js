@@ -5,6 +5,9 @@ import SavingsChartCard from './cards/savings';
 import InvestmentChartCard from './cards/assets';
 import LoanChartCard from './cards/liabilities';
 import NetWorthChartCard from './cards/networth';
+import EmergencyFundChartCard from './cards/emergency_fund';
+import TermInsuranceChartCard from './cards/term_insurance';
+import ProfileChartCard from './cards/profle';
 
 import './commonCard.css';
 
@@ -28,6 +31,15 @@ const ChartCards = () => {
             </div>
             <div className='col-lg-4'>
                 <NetWorthChartCard />
+            </div>
+            <div className='col-lg-4'>
+                <EmergencyFundChartCard />
+            </div>
+            <div className='col-lg-4'>
+                <TermInsuranceChartCard />
+            </div>
+            <div className='col-lg-4'>
+                <ProfileChartCard />
             </div>
         </div>
     )

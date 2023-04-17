@@ -1,0 +1,47 @@
+.basic_details_updates__btn{
+    border: none;
+    background-color: rgb(156, 225, 156);
+    border-radius: 10px;
+    padding: .5rem .8rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 2rem;
+}
+.basic_details_remove__btn{
+    border: none;
+    background-color: rgb(243, 154, 154);
+    border-radius: 10px;
+    padding: .5rem .8rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.basic_details_form{
+    margin-bottom: 1.5rem;
+}
+
+.basic_details_form__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.basic_details_address{
+    border: 1px solid lightgray;
+    padding: .8rem;
+    border-radius: 10px;
+}
+
+
+
+@media (min-width: 1024px) {
+    .basic_details_form{
+        margin-bottom: 0;
+    }
+    .basic_details_form__btn{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
